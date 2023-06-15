@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types</title>
+
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    There are three main types of CSS:
+
+    Inline CSS: Inline CSS is applied directly to individual HTML elements using the "style"
+    attribute. It involves adding the CSS properties and values directly within the HTML tags.
+    Inline CSS takes the highest priority and overrides any external or internal styles
+    applied to the element. Here's an example:
+
+    <br>
+
+    <p style="color: blue; font-size: 16px;">This is a paragraph with inline CSS.</p>
+
+
+    <br>
+
+
+    Internal CSS: Internal CSS is defined within the style tags in the head section of an HTML
+    document. It allows you to define CSS rules that apply to multiple elements on the same page.
+    Internal CSS takes priority over external stylesheets but is overridden by inline styles.
+    Here's an example:
+
+    <p>This is a paragraph with internal CSS.</p>
+
+    External CSS: External CSS is stored in separate CSS files and linked to HTML documents
+    using the link tag. This method allows you to maintain a consistent style across multiple
+    web pages. External CSS files have the lowest priority and are overridden by inline and
+    internal styles. Here's an example:
+
+    <p>This is a paragraph with external CSS.</p>
+
+
+    External CSS provides the most flexibility, as you can create and link multiple CSS files
+    to different web pages, ensuring consistent styles throughout your website.
+
+</body>
+
+</html>

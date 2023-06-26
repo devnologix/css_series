@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    Flexbox, also known as the Flexible Box Layout module, is a powerful CSS layout system that 
+    allows you to create flexible and responsive designs. It provides a straightforward way to 
+    align and distribute space among elements in a container, regardless of their size or order.
+
+    To use flexbox, you start by creating a flex container using the display property set to flex 
+    or inline-flex. This container becomes a flex formatting context, which means it controls the 
+    layout of its child elements.
+
+    Imagine you have a row of boxes on a table, and you want to arrange them in a flexible way. 
+    Flexbox is like a set of rules that you can apply to those boxes to organize them neatly.
+
+    #Flex Container Properties:
+
+    1. display: Specifies whether an element should be treated as a flex container. 
+    The value can be flex, which establishes a block-level flex container, or inline-flex, 
+    which establishes an inline-level flex container.
+
+    2. flex-direction: Defines the direction of the main axis along which flex items are placed. 
+    The main axis determines the direction in which flex items flow. The possible values are:
+
+    3. row (default): Flex items are placed in a row from left to right.
+
+    4. row-reverse: Flex items are placed in a row from right to left.
+
+    5. column: Flex items are placed in a column from top to bottom.
+
+    6. column-reverse: Flex items are placed in a column from bottom to top.
+
+    7. flex-wrap: Specifies whether flex items should wrap to multiple lines if there is insufficient 
+    space on a single line. The possible values are:
+
+    8. nowrap (default): Flex items are all placed on a single line.
+
+    9. wrap: Flex items wrap onto multiple lines if necessary.
+
+    10. wrap-reverse: Flex items wrap onto multiple lines in reverse order.
+
+    11. flex-flow: A shorthand property that combines flex-direction and flex-wrap in a single declaration. 
+    For example, flex-flow: row wrap sets the direction to row and allows wrapping.
+
+    12. justify-content: Aligns flex items along the main axis and controls the spacing between them. The possible values are:
+
+    13. flex-start (default): Flex items are aligned at the start of the container.
+
+    14. flex-end: Flex items are aligned at the end of the container.\
+
+    15. center: Flex items are centered within the container.
+
+    16. space-between: Flex items are evenly distributed along the main axis with space between them.
+
+    17. space-around: Flex items are evenly distributed along the main axis with space around them.
+
+    18. space-evenly: Flex items are evenly distributed along the main axis with equal space around them.
+
+    19. align-items: Aligns flex items along the cross axis (perpendicular to the main axis) and 
+    controls their vertical alignment. The possible values are:
+
+    20. stretch (default): Flex items are stretched to fill the container vertically.
+
+    21. flex-start: Flex items are aligned at the start of the cross axis.
+
+    22. flex-end: Flex items are aligned at the end of the cross axis.
+
+    23. center: Flex items are centered vertically within the container.
+
+    24. baseline: Flex items are aligned based on their baselines.
+
+    25. align-content: Defines how multiple lines of flex items are aligned along the cross axis when 
+    there is extra space available. This property applies when there are multiple lines of flex 
+    items due to wrapping. The possible values are the same as justify-content.
+
+    #Flex Item Properties:
+
+    1. flex-grow: Specifies how flex items grow to occupy available space along the main axis. 
+    A value of 0 (default) means the item does not grow. Positive values determine the ratio at 
+    which items grow relative to others.
+
+    2. flex-shrink: Determines how flex items shrink when there is not enough space along the main axis.
+     A value of 1 (default) means the item can shrink. Positive values determine the ratio at which 
+     items shrink relative to others.
+
+    3. flex-basis: Sets the initial size of a flex item along the main axis before it starts to grow or 
+    shrink. The value can be a length (e.g., 20%, 200px) or auto (which sizes the item based on 
+    its content).
+
+    4. flex: A shorthand property that combines flex-grow, flex-shrink, and flex-basis into a single 
+    declaration. The default value is 0 1 auto.
+
+    5. align-self: Overrides the align-items value for a specific flex item, allowing individual control 
+    over its alignment along the cross axis.
+
+    These properties give you fine-grained control over the layout and behavior of flex items within 
+    a flex container. By utilizing different combinations of these properties, you can create dynamic 
+    and responsive layouts that adapt to various screen sizes and content structures.
+
+
+    By applying these flexbox rules to the boxes, you can create different layouts and adjust them 
+    based on the available space. It's like having a flexible grid system that adapts to different 
+    screen sizes and content.
+
+    Flexbox makes it easier to create responsive designs where the boxes automatically adjust and 
+    reposition themselves as needed. It simplifies the task of arranging elements on a web page, 
+    making it more intuitive and flexible.
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Block */
+        .block {
+            display: block;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* The block class represents a block-level element with a red background. */
+
+        /* Inline */
+        .inline {
+            display: inline;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        /* The inline class represents an inline-level element with a blue background. */
+
+        /* Inline-block */
+        .inline-block {
+            display: inline-block;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* The inline-block class represents an inline-level element with a green background. */
+
+        /* None */
+        .none {
+            display: none;
+        }
+        /* The none class hides the element using display: none. */
+
+        /* Flex */
+        .flex-container {
+            display: flex;
+            background-color: yellow;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* The flex-container class creates a flex container with a yellow background */
+
+        .flex-item {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        /* and the flex-item class represents the flex items with an orange background. */
+
+        /* Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: lightgray;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* The grid-container class creates a grid container with a light gray background, */
+
+        .grid-item {
+            background-color: darkgray;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+        /*  and the grid-item class represents the grid items with a dark gray background. */
+
+        /* Table */
+        .table {
+            display: table;
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* The table class represents a table-like element with a purple background,  */
+
+        .table-cell {
+            display: table-cell;
+            background-color: pink;
+            color: white;
+            padding: 10px;
+        }
+        /* and the table-cell class represents table cells with a pink background. */
+
+        .table-row {
+            display: table-row;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    The display property in CSS is used to specify how an element should be rendered in the browser.
+    It controls the type of box that an element generates, and therefore, how it interacts with
+    other elements on the page. Here are the various values that can be assigned to the display
+    property:
+
+
+    <div class="block">Block Element</div>
+
+    block: When an element has a display value of block, it generates a block-level box.
+    This means it starts on a new line and takes up the full available width. Other elements
+    cannot be positioned next to it horizontally.
+
+
+    <span class="inline">Inline Element</span>
+    <span class="inline">Inline Element</span>
+    <span class="inline">Inline Element</span>
+
+
+    inline: The inline value makes an element generate an inline-level box. This allows the element
+    to flow with the surrounding content, not starting on a new line. It occupies only the space
+    required by its content.
+
+    <div class="inline-block">Inline Block Element</div>
+    <div class="inline-block">Inline Block Element</div>
+
+
+
+    inline-block: The inline-block value combines characteristics of both block and inline. It
+    generates an inline-level box that can also have block-level properties. This means it can
+    have a set width, height, padding, and margins while still flowing with the surrounding content.
+
+
+
+    <div class="none">None Element (hidden)</div>
+
+    none: When the display value is set to none, the element is not displayed at all. It is completely
+    removed from the layout and does not take up any space. This property is often used for dynamically
+    hiding elements.
+
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    flex: The flex value turns an element into a flexible container, allowing you to use flexbox layout.
+    Flexbox provides powerful tools for controlling the alignment, direction, order, and size
+    of its child elements.
+
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+    </div>
+
+    grid: With the grid value, an element becomes a grid container, enabling grid layout. Grid layout allows you to
+    define rows and columns and position its child elements accordingly, creating complex and responsive layouts.
+
+
+    <div class="table">
+
+        table: When an element has a display value of table, it behaves like a table. It generates a block-level table
+        box,
+        making it useful for creating table-like structures using non-table HTML elements.
+
+        <div class="table-row">
+
+            table-row: The table-row value makes an element behave like a table row. It generates a block-level
+            table-row box,
+            used for displaying elements as rows inside a table.
+
+            <div class="table-cell">Table Cell 1</div>
+            <div class="table-cell">Table Cell 2</div>
+            <div class="table-cell">Table Cell 3</div>
+
+            table-cell: When an element has a display value of table-cell, it behaves like a table cell. It generates a
+            block-level table-cell box, used for displaying elements as cells inside a table.
+
+        </div>
+    </div>
+
+
+    inline-table: The inline-table value is similar to table, but it behaves like an inline-level table. It combines
+    characteristics of both inline and table, allowing the element to flow with the surrounding content while still
+    maintaining table-like behavior.
+
+
+
+    These display property values offer flexibility in defining the behavior and layout of elements in CSS, allowing you
+    to create a wide range of designs and structures on web pages.
+</body>
+
+</html>

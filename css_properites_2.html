@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    padding, borders, and margins
+
+
+     <!-- Padding Property -->
+
+
+    Padding properties in CSS (Cascading Style Sheets) are used to control the space between
+    the content of an element and its border. There are four padding properties available:
+
+    padding-top: Specifies the padding size for the top side of an element.
+    padding-right: Specifies the padding size for the right side of an element.
+    padding-bottom: Specifies the padding size for the bottom side of an element.
+    padding-left: Specifies the padding size for the left side of an element.
+    These properties can accept different types of values, including:
+
+    Length values: You can specify the padding size using absolute length units like pixels (px),
+    centimeters (cm), millimeters (mm), inches (in), points (pt), or picas (pc), or relative
+    length units like percentages (%).
+    Example: padding-top: 10px;
+
+    Percentage values: You can specify the padding size as a percentage of the containing element's
+    width.
+    Example: padding-left: 20%;
+
+    Auto: You can use the auto keyword to let the browser calculate the padding size automatically.
+    Example: padding-right: auto;
+
+    Initial: Sets the padding size to its default value.
+    Example: padding-bottom: initial;
+
+    Inherit: Inherits the padding size from the parent element.
+    Example: padding-top: inherit;
+
+    It's also possible to use shorthand properties to set multiple padding values at once:
+
+    padding: Sets the padding for all sides of an element. You can specify either a single value
+    to apply the same padding to all sides or provide values for each side in the order top, right,
+    bottom, left.
+    Example: padding: 10px; or padding: 10px 20px 15px 5px;
+
+    padding-horizontal: Sets the padding for the left and right sides of an element. You can specify
+    a single value for both sides or provide separate values for each side.
+    Example: padding-horizontal: 10px; or padding-horizontal: 10px 20px;
+
+    padding-vertical: Sets the padding for the top and bottom sides of an element. You can specify a
+    single value for both sides or provide separate values for each side.
+    Example: padding-vertical: 10px; or padding-vertical: 10px 15px;
+
+    Using these padding properties, you can control the spacing around elements in your web page
+    layout.
+
+    <!-- Margin -->
+
+
+    Margin properties in CSS (Cascading Style Sheets) are used to control the space outside
+    of an element, between the element and its neighboring elements. There are four margin
+    properties available:
+
+    margin-top: Specifies the margin size for the top side of an element.
+    margin-right: Specifies the margin size for the right side of an element.
+    margin-bottom: Specifies the margin size for the bottom side of an element.
+    margin-left: Specifies the margin size for the left side of an element.
+    These properties can accept different types of values, including:
+
+    Length values: You can specify the margin size using absolute length units like pixels (px),
+    centimeters (cm),
+    millimeters (mm), inches (in), points (pt), or picas (pc), or relative length units like
+    percentages (%).
+    Example: margin-top: 10px;
+
+    Percentage values: You can specify the margin size as a percentage of the containing
+    element's width.
+    Example: margin-left: 20%;
+
+    Auto: You can use the auto keyword to let the browser calculate the margin size automatically.
+    Example: margin-right: auto;
+
+    Initial: Sets the margin size to its default value.
+    Example: margin-bottom: initial;
+
+    Inherit: Inherits the margin size from the parent element.
+    Example: margin-top: inherit;
+
+    It's also possible to use shorthand properties to set multiple margin values at once:
+
+    margin: Sets the margin for all sides of an element. You can specify either a single
+    value to apply the same margin
+    to all sides or provide values for each side in the order top, right, bottom, left.
+    Example: margin: 10px; or margin: 10px 20px 15px 5px;
+
+    margin-horizontal: Sets the margin for the left and right sides of an element. You can
+    specify a single value for
+    both sides or provide separate values for each side.
+    Example: margin-horizontal: 10px; or margin-horizontal: 10px 20px;
+
+    margin-vertical: Sets the margin for the top and bottom sides of an element. You can
+    specify a single value for both
+    sides or provide separate values for each side.
+    Example: margin-vertical: 10px; or margin-vertical: 10px 15px;
+
+    margin-auto: Sets the margin to auto for centering an element horizontally within its container.
+    Example: margin-left: auto; margin-right: auto;
+
+    Using these margin properties, you can control the spacing between elements in your
+    web page layout.
+
+
+
+    <!-- Border -->
+
+
+    Border properties in CSS (Cascading Style Sheets) are used to define the appearance of an
+    element's border. There
+    are several border properties available:
+
+    border-width: Specifies the width of the border. You can set a specific width value using
+    absolute length units like
+    pixels (px), or relative length units like percentages (%).
+    Example: border-width: 2px;
+
+    border-style: Specifies the style of the border. This property can take values such as none,
+    solid, dotted, dashed,
+    double, groove, ridge, inset, outset, and more.
+    Example: border-style: dashed;
+
+    border-color: Specifies the color of the border. You can set a color using named colors,
+    hexadecimal color codes
+    (#RRGGBB), RGB values (rgb() or rgba()), or HSL values (hsl() or hsla()).
+    Example: border-color: red;
+
+    border: A shorthand property that combines the border-width, border-style, and border-color
+    properties into a single
+    declaration. You can specify the values in that order, or use specific values for
+    each property individually.
+    Example: border: 2px solid red;
+
+    border-top-width, border-right-width, border-bottom-width, border-left-width:
+    These properties allow you to set the
+    width of the border for specific sides individually.
+    Example: border-top-width: 2px;
+
+    border-top-style, border-right-style, border-bottom-style, border-left-style:
+    These properties allow you to set the
+    style of the border for specific sides individually.
+    Example: border-top-style: dashed;
+
+    border-top-color, border-right-color, border-bottom-color, border-left-color:
+    These properties allow you to set the
+    color of the border for specific sides individually.
+    Example: border-top-color: red;
+
+    border-radius: Specifies the radius of the border corners, creating rounded corners.
+    You can set a specific radius
+    value using absolute length units like pixels (px), or relative length units like percentages (%).
+    Example: border-radius: 5px;
+
+    border-image: Specifies an image to be used as the border instead of a solid color.
+    It includes properties like
+    border-image-source, border-image-slice, border-image-width, border-image-outset,
+    and border-image-repeat.
+    Example: border-image: url(border-image.png) 30 30 round;
+
+    These border properties allow you to customize the appearance of an element's border
+    and create various visual
+    effects.
+
+
+</body>
+
+</html>
